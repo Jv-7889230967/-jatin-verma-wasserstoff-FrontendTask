@@ -26,7 +26,7 @@ export default function NavToggler({ activetab, setActivetab }) {
       >                                                                                         
       
       {/*which chnages with click on the tab button as mentioned in the handleclick function*/}
-        <button className="text-white text-lg font-medium overflow-hidden" onClick={() => handleClick('events')}>
+        <button className="text-white text-sm md:text-lg font-medium overflow-hidden" onClick={() => handleClick('events')}>
           Events
         </button>
       </div>
@@ -35,7 +35,7 @@ export default function NavToggler({ activetab, setActivetab }) {
           activeButton === 'collections' ? 'bg-stone-500' : 'bg-inherit'
         } ${activetab === 'collections' ? 'active' : ''} transition-colors ease-in-out duration-100`}
       >
-        <button className="overflow-hidden text-white text-lg font-medium" onClick={() => handleClick('collections')}>
+        <button className="overflow-hidden text-white text-sm md:text-lg font-medium" onClick={() => handleClick('collections')}>
           Collections
         </button>
       </div>
