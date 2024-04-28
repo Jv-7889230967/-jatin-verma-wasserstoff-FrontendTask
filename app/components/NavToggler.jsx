@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function NavToggler({ activetab, setActivetab }) {
+export default function NavToggler({ activetab, setActivetab,showSidebar}) {
   const [activeButton, setActiveButton] = useState('events'); 
   // Initial active button
 
@@ -17,7 +17,7 @@ export default function NavToggler({ activetab, setActivetab }) {
   //trigerring the useEffect hook when active tab is changed
 
   return (
-    <div className="absolute flex flex-row h-7 w-28 md:h-14 md:w-64 mt-40 -ml-10 md:-ml-0 justify-between items-center bg-stone-800 rounded-full">
+    <div className={`absolute flex flex-row ${showSidebar && 'h-7 w-[138px] -ml-16'} h-14 w-64 mt-40 -ml-0 justify-between items-center bg-stone-800 rounded-full`}>
       <div
         className={`flex justify-center items-center h-full w-1/2 rounded-full ${
           activeButton === 'events' ? 'bg-stone-500' : 'bg-inherit'

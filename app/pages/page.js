@@ -36,7 +36,7 @@ export default function Page() {
         <ImageSlider/>
       <div className="absolute h-auto w-auto top-40 left-20">
         <h1 className="text-white text-9xl opacity-10 text-gray-700 font-extrabold">ASTR<br/>IX<br/>{activetab==='events'?'EVENTS':'COLLECTIONS'}</h1>
-        <NavToggler activetab={activetab} setActivetab={setActivetab} />  {/*the toggler button component to toggle the content on sidebar*/}
+        <NavToggler activetab={activetab} setActivetab={setActivetab} showSidebar={showSidebar} />  {/*the toggler button component to toggle the content on sidebar*/}
       </div>     {/*we are sending two two props to check with tab is active to change the content of sidebar*/}
 
     </div>
