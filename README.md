@@ -4,15 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.Run this command to install the node modules and dev dpendencies-npm install
+2.to run the project run this command-npm run dev
+3-All images are saved in the assets folder in the public folder 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -28,6 +22,8 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+
 
 ## Deploy on Vercel
 
