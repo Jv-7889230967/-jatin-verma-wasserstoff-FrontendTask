@@ -21,7 +21,8 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
     <div className="relative overflow-x-hidden overflow-y-auto h-screen w-screen bg-stone-900">
 
       <div className="flex flex-row justify-between items-center p-3 h-20 w-screen">   {/*heading div for the second page conatinf heading and Logo*/}
-        <h1 className="flex text-amber-500 text-5xl font-bold ml-16"><FaReact /> Astrix.</h1>   {/*React logo*/}
+        <h1 className="flex text-amber-500 text-5xl font-bold ml-16"><FaReact /> Astrix.</h1>   
+        {/*React logo*/}
         {/*icon to display sidebar for smaller screens*/}
         <TocIcon    
           sx={{ color: "white" }}
