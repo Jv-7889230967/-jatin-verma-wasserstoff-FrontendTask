@@ -9,13 +9,14 @@ export default function SideBar({activetab}) {
     <div className="z-40 absolute hidden flex-row md:flex inset-y-0 right-0 h-screen w-auto">
       <div className="h-screen w-20 bg-violet-400 flex justify-center items-center overflow-hidden">
         <div className="flex rotate-90 whitespace-nowrap">
-          <p className="text-3xl font-semibold animate-scroll infinite">  //this the scrolling vertical div with repeated scrolling feature of the text
+           {/*this the scrolling vertical div with repeated scrolling feature of the text*/}
+          <p className="text-3xl font-semibold animate-scroll infinite"> 
             Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds, exquisite treasures, and timeless collections at our upcoming event Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds,Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds, exquisite treasures, and timeless collections at our upcoming event Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds,Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds, exquisite treasures, and timeless collections at our upcoming event Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds,Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds, exquisite treasures, and timeless collections at our upcoming event Discover the ultimate collector's paradise at the heart of Delhi! Delve into a world of rare finds,
           </p>
         </div>
       </div>
 
-      //here im chnaging the content of the sidebar on the basis of the activetab prop sent by navtoggler component
+      {/*here im chnaging the content of the sidebar on the basis of the activetab prop sent by navtoggler component*/}
 
       <div className="h-screen w-auto bg-stone-900 overflow-y-auto"> 
         <div className="flex flex-col m-5">
@@ -38,7 +39,7 @@ export default function SideBar({activetab}) {
      </div>}
         <br/>
         <br/>
-        {activetab==='events'?<EventsScroll/>:<ScrollItems/>}  //rendreing different components on the state of activetab
+        {activetab==='events'?<EventsScroll/>:<ScrollItems/>}  {/*rendreing different components on the state of activetab*/}
   <div className={`flex flex-row h-40 w-96 ${activetab === 'events' ? 'justify-between' : 'justify-end'} items-end mt-12`}>
   {activetab === 'events' && <Image src={'/assets/qr-Code.webp'} alt='card' height={100} width={100}/>}
   <div className='flex items-center justify-center h-14 w-40 mt-14 bg-yellow-300 rounded-full text-xl font-bold'>

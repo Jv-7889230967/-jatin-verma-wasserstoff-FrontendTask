@@ -22,7 +22,7 @@ export default function Home() {
 
       <div className="flex flex-col h-auto w-auto overflow-x-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         
-        <section className="flex flex-row h-20 w-auto gap-3 items-center m-2">  //multiple section for displaying text
+        <section className="flex flex-row h-20 w-auto gap-3 items-center m-2">  {/*multiple section for displaying text*/}
           <p className="text-6xl font-bold not-italic">WE</p>
           <div className="w-64 h-16 galaxy-image transition-transform"></div>
           <p className="text-6xl font-bold not-italic">ORGANIZE THE</p>

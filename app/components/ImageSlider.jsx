@@ -18,7 +18,7 @@ export default function ImageSlider() {
     const totalWidth = images.length * imageWidth;
     let currentScroll = 0;
 
-    const intervalId = setInterval(() => {  //creating a infinite loop to restart the scrolling images and scrolling according to the width of the images present
+    const intervalId = setInterval(() => {  
       // Scroll to the next image
       if (scrollRef.current) {
         currentScroll = (currentScroll + imageWidth) % totalWidth;
@@ -31,11 +31,11 @@ export default function ImageSlider() {
   return (
     <div className="flex flex-row h-3/4 w-screen md:w-5/12 ml-28 mt-14 overflow-hidden relative">
       <div className="flex gap-10 overflow-x-auto scroll-smooth focus:scroll-auto scroll-snap-type-x scroll-padding-x-20" ref={scrollRef} style={{ scrollbarWidth: "none" }}>
-        {images.map((image, index) => (  //mapping the images object to avoid repeatively coding the images and reducing the lines of code 
+        {images.map((image, index) => (
           <div key={index} className={`z-20 h-full flex-shrink-0 scroll-snap-align-center`}>
             <h2 className="text-white mt-2 text-2xl font-bold">{image.heading}</h2>
             <div className="relative w-96 h-full">
-              <Image src={image.src} alt={image.heading} layout="fill" objectFit="cover" className="rounded-lg" />   //next-image tag used for image rendreing over regular img tag
+              <Image src={image.src} alt={image.heading} layout="fill" objectFit="cover" className="rounded-lg" />   
             </div>
           </div>
         ))}
