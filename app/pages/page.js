@@ -22,12 +22,14 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
       <div className="flex flex-row justify-between items-center p-3 h-20 w-screen">   {/*heading div for the second page conatinf heading and Logo*/}
         <h1 className="flex text-amber-500 text-5xl font-bold ml-16"><FaReact /> Astrix.</h1>   {/*React logo*/}
-        <TocIcon    {/*icon to display sidebar for smaller screens*/}
+        {/*icon to display sidebar for smaller screens*/}
+        <TocIcon    
           sx={{ color: "white" }}
           fontSize="large"
           className="block md:hidden cursor-pointer"
-          onClick={()=>{HandlecLick()}}  {/*toggeling feature for opening and closing the sidebar for a responsive layout*/}
-        />
+          onClick={()=>{HandlecLick()}}  
+          />
+          {/*toggeling feature for opening and closing the sidebar for a responsive layout*/}
       </div>
    {showSidebar && <SmallScreenSideBar activetab={activetab}/>}  {/*the smallescreen sidebar component showing only when showsidebar stae is true*/}
    <SideBar activetab={activetab} />  {/*sidebar components for larger screens*/}
