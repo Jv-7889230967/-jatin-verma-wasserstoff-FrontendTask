@@ -5,6 +5,7 @@ import SideBar from "../components/SideBar";
 import TocIcon from '@mui/icons-material/Toc';
 import NavToggler from "../components/NavToggler";
 import SmallScreenSideBar from "../components/SmallScreenSideBar";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Page() {
   const [activetab, setActivetab] = useState('event');
@@ -13,9 +14,6 @@ export default function Page() {
    setShowSidebar(!showSidebar);
    console.log(showSidebar)
   }
-  const OPTIONS = { loop: true }
-const SLIDE_COUNT = 5
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
     <div className="relative overflow-x-hidden overflow-y-auto h-screen w-screen bg-stone-900">
@@ -35,6 +33,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
    {showSidebar && <SmallScreenSideBar activetab={activetab}/>}  {/*the smallescreen sidebar component showing only when showsidebar stae is true*/}
    <SideBar activetab={activetab} />  {/*sidebar components for larger screens*/}
 
+        <ImageSlider/>
       <div className="absolute h-auto w-auto top-40 left-20">
         <h1 className="text-white text-9xl opacity-10 text-gray-700 font-extrabold">ASTR<br/>IX<br/>EVENTS</h1>
         <NavToggler activetab={activetab} setActivetab={setActivetab} />  {/*the toggler button component to toggle the content on sidebar*/}
