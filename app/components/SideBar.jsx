@@ -40,7 +40,7 @@ export default function SideBar({ activetab }) {
           <br />
           {activetab === 'events' ? <EventsScroll /> : <ScrollItems />} {/* rendering different components based on the state of activetab */}
           <div className={`flex flex-row h-40 w-96 ${activetab === 'events' ? 'justify-between' : 'justify-end'} items-end mt-12`}>
-            {activetab === 'events' && <Image src={'/assets/qr-Code.webp'} alt='card' height={100} width={100} />}
+            {activetab === 'events' && <Image src={'/assets/qr-image.jpg'} alt='card' height={100} width={100} />}
             <div className='flex items-center justify-center h-14 w-40 mt-14 bg-yellow-300 rounded-full text-xl font-bold'>
               Join WaitList
             </div>
