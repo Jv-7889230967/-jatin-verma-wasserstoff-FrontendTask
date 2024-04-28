@@ -4,6 +4,8 @@ import ScrollItems from './ScrollItems';
 import Image from 'next/image';
 import EventsScroll from './EeventsScroll';
 
+//this is the sidebar for smaller screen does have the text scrolling container for better view in smaller screen
+//E,se everything is similar
 export default function SmallScreenSideBar({activetab}) {
   return (
     <div className={`z-40 absolute flex flex-row right-0 h-full w-auto`}>
