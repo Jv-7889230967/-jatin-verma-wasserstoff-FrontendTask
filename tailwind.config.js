@@ -7,12 +7,34 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        slide: {
+          "0%,100%": { transform: "w-80" },
+          "50%": { transform: "w-64" },
+        },
+        slideinRight: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0px)" },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      }, 
+      animation: {
+        slidein: "slide 0.2s ease-out",
+        slideOut: "slide 0.2s ease-in reverse",
+        slideinRight: "slideinRight 1.5s ease-in-out infinite",
+        slideDown: "slideDown 0.2s ease-out",
+        slideUp: "slideUp 0.2s ease-out",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tw-elements/plugin.cjs")
+  ],
 };
