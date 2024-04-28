@@ -8,9 +8,9 @@ import EventsScroll from './EeventsScroll';
 //Else everything is similar
 export default function SmallScreenSideBar({activetab}) {
   return (
-    <div className={`z-40 absolute flex md:hidden flex-row  right-0 h-full w-[25rem]`}>
+    <div className={`z-40 absolute flex md:hidden flex-row  right-0 h-full w-[25.99rem]`}>
 
-      <div className="h-screen w-auto bg-stone-900 overflow-y-auto">
+      <div className="h-screen w-full bg-stone-900 overflow-y-auto">
         <div className="flex flex-col m-5">
         <h1 className="text-white text-2xl font-bold">Explore Your First<br/>{activetab==='events'? 'Event':'Collectible'}</h1>
         <br/>

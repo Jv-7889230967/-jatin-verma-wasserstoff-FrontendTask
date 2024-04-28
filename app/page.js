@@ -19,10 +19,9 @@ export default function Home() {
   return (
     <div className="absolute h-screen w-screen overflow-hidden bg-orange-100">
       <h1 className="flex fixed gap-4 inset-y-12 inset-x-24 text-black text-5xl font-bold"><FaReact /> Astrix.</h1>
-
-       <div className="fixed h-[32rem] w-[73rem] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+ {/*multiple section for displaying text*/}
+       <div className="fixed h-[32rem] w-[80%] overflow-x-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <div className="flex flex-col h-full w-[73rem] gap-3">
-          {/*multiple section for displaying text*/}
         <section className="flex flex-row h-20 w-full gap-3 items-center m-2">
           <p className="text-6xl font-bold not-italic">WE</p>
           <div className="w-64 h-16 galaxy-image transition-transform"></div>
