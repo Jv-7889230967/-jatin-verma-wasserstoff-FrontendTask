@@ -17,7 +17,7 @@ export default function NavToggler({ activetab, setActivetab }) {
   //trigerring the useEffect hook when active tab is changed
 
   return (
-    <div className="absolute flex flex-row h-14 w-80 mt-40 justify-between items-center bg-stone-800 rounded-full">
+    <div className="absolute flex flex-row h-7 w-28 md:h-14 md:w-64 mt-40 -ml-10 md:-ml-0 justify-between items-center bg-stone-800 rounded-full">
       <div
         className={`flex justify-center items-center h-full w-1/2 rounded-full ${
           activeButton === 'events' ? 'bg-stone-500' : 'bg-inherit'
@@ -26,7 +26,7 @@ export default function NavToggler({ activetab, setActivetab }) {
       >                                                                                         
       
       {/*which chnages with click on the tab button as mentioned in the handleclick function*/}
-        <button className="text-white text-lg font-medium" onClick={() => handleClick('events')}>
+        <button className="text-white text-lg font-medium overflow-hidden" onClick={() => handleClick('events')}>
           Events
         </button>
       </div>
@@ -35,7 +35,7 @@ export default function NavToggler({ activetab, setActivetab }) {
           activeButton === 'collections' ? 'bg-stone-500' : 'bg-inherit'
         } ${activetab === 'collections' ? 'active' : ''} transition-colors ease-in-out duration-100`}
       >
-        <button className="text-white text-lg font-medium" onClick={() => handleClick('collections')}>
+        <button className="overflow-hidden text-white text-lg font-medium" onClick={() => handleClick('collections')}>
           Collections
         </button>
       </div>
